@@ -1,0 +1,26 @@
+spring:
+
+  application:
+    name: UnibellTestEx
+
+  datasource:
+    url: jdbc:postgresql://127.0.0.1:5432/db
+    username: admin
+    password: password
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    open-in-view: false
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+        ddl-auto: update
+        hbm2ddl:
+          auto: update
+
+  main:
+    banner-mode: off
+
+  messages:
+    encoding: UTF-8
